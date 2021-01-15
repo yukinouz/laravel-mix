@@ -1,0 +1,31 @@
+{  
+  "author": "Yuki Nose",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run dev --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dist": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "mix": "npx mix",
+    "mix -p": "npx mix -p",
+    "mix -w": "npx mix watch"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.10",
+    "postcss": "^8.2.4",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.4",
+    "sass-loader": "^10.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "npm-check-updates": "^10.2.5"
+  },
+  "browserslist": [
+    "last 1 version",
+    "IE 11",
+    "Android >= 6"
+  ]
+}
