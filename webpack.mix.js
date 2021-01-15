@@ -37,6 +37,15 @@ mix
       options: {
         grid: true,
       }
-    }
+    },
+    postCss: [
+      require('css-mqpacker')(),
+      require('css-declaration-sorter')({
+        order: 'alphabetical'
+      }),
+      require('postcss-custom-properties')({
+        preserve: false
+    })
+    ]
   });
 
