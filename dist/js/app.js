@@ -5,12 +5,26 @@
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _module_jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module/jquery */ "./src/js/module/jquery.js");
+/* harmony import */ var _module_jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_module_jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/***/ }),
+
+/***/ "./src/js/module/jquery.js":
+/*!*********************************!*\
+  !*** ./src/js/module/jquery.js ***!
+  \*********************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-$(window).on('load', function () {
-  console.log('hello');
-  alert('hello');
+$(window).on('scroll', function () {
+  var scrollY = $(window).scrollTop();
+  console.log(scrollY);
 });
 
 /***/ }),
@@ -10909,6 +10923,32 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
+/***/ }),
+
+/***/ "./src/scss/foundation/_base.scss":
+/*!****************************************!*\
+  !*** ./src/scss/foundation/_base.scss ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/scss/foundation/_reset.scss":
+/*!*****************************************!*\
+  !*** ./src/scss/foundation/_reset.scss ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -10943,6 +10983,30 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// It's empty as some runtime module handles the default behavior
 /******/ 	__webpack_require__.x = function() {}
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
@@ -10972,7 +11036,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./src/js/app.js"],
-/******/ 			["./src/scss/app.scss"]
+/******/ 			["./src/scss/app.scss"],
+/******/ 			["./src/scss/foundation/_base.scss"],
+/******/ 			["./src/scss/foundation/_reset.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		

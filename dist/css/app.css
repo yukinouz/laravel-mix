@@ -2,3 +2,18 @@ h1 {
   color: red;
   font-size: 48px;
 }
+
+.box {
+  height: 200vh;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    color: blue;
+  }
+  .box {
+    height: 300vh;
+  }
+}
+
+/*# sourceMappingURL=app.css.map*/

@@ -1,4 +1,14 @@
 h1{
   color: red;
   font-size: 48px;
+  @media only screen and (min-width: 768px) {
+    color: blue;
+  }
+}
+
+.box{
+  height: 200vh; // console.logの高さ取得のため
+  @media only screen and (min-width: 768px) {
+    height: 300vh; // npm run dist
+  }
 }
