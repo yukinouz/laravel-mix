@@ -10923,32 +10923,6 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
-/***/ }),
-
-/***/ "./src/scss/foundation/_base.scss":
-/*!****************************************!*\
-  !*** ./src/scss/foundation/_base.scss ***!
-  \****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/scss/foundation/_reset.scss":
-/*!*****************************************!*\
-  !*** ./src/scss/foundation/_reset.scss ***!
-  \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
 /***/ })
 
 /******/ 	});
@@ -11036,9 +11010,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./src/js/app.js"],
-/******/ 			["./src/scss/app.scss"],
-/******/ 			["./src/scss/foundation/_base.scss"],
-/******/ 			["./src/scss/foundation/_reset.scss"]
+/******/ 			["./src/scss/app.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		

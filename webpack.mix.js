@@ -1,10 +1,19 @@
 const mix = require('laravel-mix');
-const glob = require('glob');
 const fs = require('fs');
 
 mix.setResourceRoot('dist');
 mix.setPublicPath('dist').version();
-mix.webpackConfig({ devtool: "source-map" });
+mix.webpackConfig({ 
+  devtool: "source-map",
+  module: {
+    rules: [
+      {
+        test: /\.scss/,
+        loader: 'import-glob-loader'
+      }
+    ]
+  }
+});
 mix.browserSync({
   server: {
     baseDir: '.',
@@ -50,4 +59,3 @@ mix
     })
     ]
   });
-
