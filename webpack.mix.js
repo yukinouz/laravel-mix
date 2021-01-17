@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const glob = require('glob');
 const fs = require('fs');
 
 mix.setResourceRoot('dist');
