@@ -31,6 +31,7 @@ mix
 
 mix
   .sass('src/scss/app.scss', 'dist/css/')
+  .sourceMaps()
   .options({
     processCssUrls: false,
     autoprefixer: {
