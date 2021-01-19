@@ -1,6 +1,6 @@
 # yukinouz-laravel-mix
 ## 環境
-require node.js
+require node.js  
 https://nodejs.org/ja/
 
 ## setup
@@ -26,7 +26,8 @@ https://flex-box.net/laravel-mix
 
 
 ## Memo
-laravel-mix公式(https://laravel-mix.com/docs/5.0/installation)の方法で進めると、cross-envを使ったnpm scriptで下記のエラーが出る。
+なぜcoss-env x npm scriptsではなくnpxコマンドを使うのか？
+[laravel-mix公式](https://laravel-mix.com/docs/5.0/installation)の方法で進めると、cross-envを使ったnpm scriptで下記のエラーが出る。
 
 該当部分
 ```javascript
@@ -39,7 +40,7 @@ laravel-mix公式(https://laravel-mix.com/docs/5.0/installation)の方法で進�
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
 }
 ```
-
+上記npm scriptを実行すると、  
 ```bash
 error: unknown option '--hide-modules'
 ```
