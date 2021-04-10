@@ -6,7 +6,7 @@
     "watch": "npx mix watch"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-declaration-sorter": "^6.0.2",
     "css-mqpacker": "^7.0.0",
