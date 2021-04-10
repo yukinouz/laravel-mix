@@ -3,7 +3,7 @@ const fs = require('fs');
 
 mix.setResourceRoot('dist');
 mix.setPublicPath('dist').version();
-mix.webpackConfig({ 
+mix.webpackConfig({
   devtool: "source-map",
   module: {
     rules: [
