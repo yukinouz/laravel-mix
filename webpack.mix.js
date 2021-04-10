@@ -56,6 +56,7 @@ mix
       }),
       require('postcss-custom-properties')({
         preserve: false
-    })
+      }),
+      require('postcss-object-fit-images'),
     ]
   });
