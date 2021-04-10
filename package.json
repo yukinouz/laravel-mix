@@ -14,12 +14,14 @@
     "laravel-mix": "^6.0.10",
     "postcss": "^8.2.4",
     "postcss-custom-properties": "^11.0.0",
+    "postcss-object-fit-images": "^1.1.2",
     "resolve-url-loader": "^3.1.2",
     "sass": "^1.32.4",
     "sass-loader": "^8.0.2"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "object-fit-images": "^3.2.4"
   },
   "browserslist": [
     "last 1 version",

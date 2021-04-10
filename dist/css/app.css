@@ -130,6 +130,12 @@ h1 {
   height: 200vh;
 }
 
+.sample-image {
+  -o-object-fit: cover;
+  font-family: "object-fit:cover";
+     object-fit: cover;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     font-size: 1.4em;
